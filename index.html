@@ -1,26 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>learn git</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <script type="text/javascript" src="./bar.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>National Park Finder</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
-<body>
-  <p>This is here so I can learn Git. Now it's modified</p>
-  <p>This is a new paragraph</p>
-  <form name="signup" action="/signup">
-    <div>
-      <label for="username">Username</label>
-      <input type="text" name="username" required>
-    </div>
+<body background="trees.jpg">
+  <section>
+    <div class="container">
+        <h1>Nab Your National Park Destination!</h1>
 
-    <div>
-      <label for="password">Password</label>
-      <input type="password" name="password">
-    </div>
+        <form id="js-form">
 
-    <input type="submit">
-</form>
+          <div id="first">
+            <label for="search-term">Search national park (example:Yellowstone National Park):</label>
+            <input type="text" name="search-term" id="js-search-term" required>
+          </div>
+
+          <div id="second">
+          <label for="search-state">Search State (example: wy):</label>
+          <input type="text" name="stateCode" id="js-search-state"/>
+          </div>
+
+          <div id="third">
+            <label for="max-results">Maximum results to return</label>
+            <input type="number" name="max-results" id="js-max-results" value="10">
+
+            <input type="submit" value="Go!"style= "background-color:green">
+            </div>
+        </form>
+
+        <div id="search-results">
+     </div>   
+       <p id="js-error-message" class="error-message"></p>
+        <section id="results" class="hidden">
+          <h2>Search results</h2>
+          <ul id="results-list">
+          </ul>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</section>
 </body>
 </html>

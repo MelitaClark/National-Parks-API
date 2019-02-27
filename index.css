@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 5px 5px 10px black;
+  color: aqua;
+  
+}
+section{
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
+}
+label{
+  font-weight:900;
+  text-shadow: 3px 2px black;
+}
+#first #second #third{
+  position: inline-block;
+  text-align: center;
+  
+}
+#first{
+  margin-bottom: 5%;
+}
+#second{
+  margin-bottom: 5%;
+}
+button, input[type="text"] {
+  padding: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.error-message {
+    color: red;
+}
+
+.hidden {
+  display: none;
+  background-color: rgb(179, 245, 190);
+}
